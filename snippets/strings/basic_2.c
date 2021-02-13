@@ -17,7 +17,7 @@ void ptr_ascii(){
   int *iptr; // iptr is a pointer, of type int (points to int)
   
   /* prints out a list of ascii value  of a-z
-     and their corresponding character trough dereferncing (*) iptr */
+     and their corresponding character trough dereferencing (*) iptr */
   for(int i='a'; i<'z';i++){
     iptr = &i; // iptr points to i
     printf("chr:%c ascii:%d at:%p\n",*iptr,*iptr,iptr); //dereference iptr 2 times, 
