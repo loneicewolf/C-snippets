@@ -18,20 +18,9 @@ void F(){
 }
 
 
-// test run:
+/* test run: */
 
 /*
- gcc -o for_func.elf for_func.c && ./for_func.elf
-executed F!
-executed F!
-executed F!
-executed F!
-executed F!
-executed F!
-executed F!
-executed F!
-executed F!
-executed F!
-executed F!
-
+* gcc -o for_func.elf for_func.c && ./for_func.elf
+* executed F!
 */
