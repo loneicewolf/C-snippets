@@ -9,7 +9,7 @@
 void F();
 
 int main() {
-  for(int i=0;i<=x;i++,F());
+  for(int i=0;i<x;i++,F());
   return 0;
 }
 
