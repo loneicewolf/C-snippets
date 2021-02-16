@@ -1,2 +1,2 @@
 # C-snippets
-some useful snippets in C
+some powerful snippets in C
