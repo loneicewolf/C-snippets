@@ -11,8 +11,8 @@ int main() {
 
 void Replace(){
 
-  char a[4]="abc";
-  char b[4]="xyz";
+  char a[4]="abc"; // <=
+  char b[4]="xyz"; //same size, which is why sizeof(a)
   printf("%s\n",a);
   for(int i=0; i<sizeof(a);i++){
 
