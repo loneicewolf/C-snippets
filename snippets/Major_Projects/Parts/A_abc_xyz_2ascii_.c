@@ -29,11 +29,7 @@ int main() {
   return 0;
 }
 
-
-// RESULTS:
-
-/*
-a    b
+a	z
 b	y
 c	x
 d	w
@@ -85,5 +81,3 @@ z	a
 120	99
 121	98
 122	97
-
-*/
