@@ -1,4 +1,6 @@
 
+/* -------------------------------  */
+
 //@Author: William Martens
 //   Date: 2021- 17Feb, 02:11
 //   Does: print abc , xyz, up down  but in rev. order.
@@ -7,9 +9,9 @@
      /*   ...   */
      /*   y	b   */
      /*   z	a   */
-     
-     //and, (commented) optionally prints ascii val.
 
+    // And ascii if needed.
+    
 #include <stdio.h>
 
   #define n printf("\n");
@@ -18,43 +20,22 @@
   #define prntIJ printf("%d\t%d\n",i,j)
   #define prntIJ_Chars printf("%c\t%c\n",i,j)
 
+  #define FOR_Ascii for(int i='a',j='z';i<='z';prntIJ_Chars,j>='a',j--,i++);
+  #define FOR_chars for(int i='a',j='z';i<='z';prntIJ,j>='a',j--,i++); 
 int main() {
   
 
-  for(int i='a',j='z';i<='z';prntIJ_Chars,j>='a',j--,i++);
-  for(int i='a',j='z';i<='z';prntIJ,j>='a',j--,i++); // prints same but ascii value
-
+  FOR_chars /*for(int i='a',j='z';i<='z';prntIJ_Chars,j>='a',j--,i++);*/
+  FOR_Ascii /*for(int i='a',j='z';i<='z';prntIJ,j>='a',j--,i++);*/
+  
 
 
   return 0;
 }
 
-a	z
-b	y
-c	x
-d	w
-e	v
-f	u
-g	t
-h	s
-i	r
-j	q
-k	p
-l	o
-m	n
-n	m
-o	l
-p	k
-q	j
-r	i
-s	h
-t	g
-u	f
-v	e
-w	d
-x	c
-y	b
-z	a
+/* -------------------------------  */
+
+
 97	122
 98	121
 99	120
@@ -81,3 +62,29 @@ z	a
 120	99
 121	98
 122	97
+a	z
+b	y
+c	x
+d	w
+e	v
+f	u
+g	t
+h	s
+i	r
+j	q
+k	p
+l	o
+m	n
+n	m
+o	l
+p	k
+q	j
+r	i
+s	h
+t	g
+u	f
+v	e
+w	d
+x	c
+y	b
+z	a
