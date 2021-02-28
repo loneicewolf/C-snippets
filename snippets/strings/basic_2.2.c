@@ -1,34 +1,47 @@
-/* basic_3.c                                */
-/* Using pointers,                          */
-/* prints out a list of ascii value  of a-z */
-/* and their corresponding character        */
-/* optionally prints out the ascii of A-Z   */
-/* and, modifies the output to make cipher
-                                    -texts */
 
-/* More compact version */
-// Skipped comments this time.
-// As well as the function.
-// And, this works for me (but maybe not for some?)
-// if this can be improved - Please create a issue!
 #include <stdio.h>
-
+void Basic_3();
 int main() {
-  int *iptr;
-  
-  for(int i='a';iptr=&i,
-          i<'z';i++  ){
-          printf("chr:%c ascii:%d\n",*iptr,*iptr);
-          }
-          
+  Basic_3();
   return 0;
 }
 
+void Basic_3(){
+  int *iptr;
+  int ctr=0;
+  for(int i='a';iptr=&i,
+          i<='z';i++  ){
+          printf("%d. %c %d\n",ctr,*iptr,*iptr);
+          ctr++;
+          }}
 /*
-      chr:a ascii:97
-      chr:b ascii:98
-      chr:c ascii:99
-      ...
-      chr:x ascii:120
-      chr:y ascii:121
+  
+  Output
+  
+  0. a 97
+  1. b 98
+  2. c 99
+  3. d 100
+  4. e 101
+  5. f 102
+  6. g 103
+  7. h 104
+  8. i 105
+  9. j 106
+  10. k 107
+  11. l 108
+  12. m 109
+  13. n 110
+  14. o 111
+  15. p 112
+  16. q 113
+  17. r 114
+  18. s 115
+  19. t 116
+  20. u 117
+  21. v 118
+  22. w 119
+  23. x 120
+  24. y 121
+  25. z 122
 */
